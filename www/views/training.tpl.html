@@ -1,0 +1,10 @@
+﻿<md-content layout-padding>
+    <div style="text-align:center">
+        <h3>{{mainModel.name}}</h3>
+    </div>
+
+    <div style="text-align:center">
+        <md-button class="md-raised md-primary" ng-click="stop()" ng-if="mainModel.itStop == false">Стоп</md-button>
+        <md-button class="md-raised" ng-click="back()" ng-if="mainModel.itStop == true">Назад</md-button>
+    </div>
+</md-content>

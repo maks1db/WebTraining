@@ -1,0 +1,22 @@
+﻿
+<md-content layout-padding>
+    <div>
+        <md-input-container class="md-block">
+            <label>Адрес сервера</label>
+            <input ng-model="mainModel.url" ng-change="onChange()">
+        </md-input-container>
+        <md-input-container class="md-block">
+            <label>Название тренировки</label>
+            <input ng-model="mainModel.name">
+        </md-input-container>
+        <md-input-container class="md-block">
+            <label>Вид тренировки</label>
+            <input ng-model="mainModel.type">
+        </md-input-container>
+
+        <div style="text-align:center">
+            <md-button class="md-raised md-warn" ng-click="start()">Старт</md-button>
+            
+        </div>
+    </div>
+</md-content>
